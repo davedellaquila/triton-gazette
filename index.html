@@ -149,12 +149,12 @@ if(!(n>=0&&n<=6))n=0;document.documentElement.classList.add('fs-'+n);}catch(e){d
    Standing element, ported from the Fiddletown Gazette — preserve in every rebuild. */
 html.fs-0{zoom:1}html.fs-1{zoom:1.08}html.fs-2{zoom:1.16}html.fs-3{zoom:1.24}html.fs-4{zoom:1.32}html.fs-5{zoom:1.4}html.fs-6{zoom:1.48}
 .fsctl{display:flex;align-items:center;gap:7px;flex:none}
-.fs-btn{background:none;border:none;color:var(--ink);cursor:pointer;font-family:Georgia,serif;font-weight:700;line-height:1;padding:4px 2px;-webkit-tap-highlight-color:transparent}
+.fs-btn{background:none;border:none;min-width:0;min-height:0;color:var(--ink);cursor:pointer;font-family:Georgia,serif;font-weight:700;line-height:1;padding:4px 2px;-webkit-tap-highlight-color:transparent}
 .fs-btn.fs-down{font-size:11px}
 .fs-btn.fs-up{font-size:18px}
 .fs-btn[disabled]{opacity:.3;cursor:default}
 .fs-dots{display:flex;gap:5px}
-.fs-dot{width:9px;height:9px;border-radius:50%;border:1.5px solid var(--muted);background:none;padding:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.fs-dot{width:9px;height:9px;min-width:0;min-height:0;border-radius:50%;border:1.5px solid var(--muted);background:none;padding:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .fs-dot.on{background:var(--accent);border-color:var(--accent)}
 @media (max-width:640px){.fsctl{gap:5px}.fs-dot{width:8px;height:8px}}
 </style>
